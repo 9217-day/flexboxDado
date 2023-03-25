@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Dado con Flexbox</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Un dado hecho apartir de Flexbox, css puro, no sass">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+	<h1>Dado hecho con Flexbox</h1>
+	<p>Basado en el <a href="https://davidwalsh.name/flexbox-dice">post</a> de Landon Schropp.</p>
+	<p>Este ejercicio es una práctica para aprender las propiedades básicas del layout Flexbox</p>
+	</header>
+	<section> <!--contenedor padre-->
+		<div class="cara-uno"> <!--se crea el conternedor para el primer dado--->
+			<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+		</div>
+
+		<div class="cara-dos"> <!--se crea el conternedor para el segundo dado--->
+			<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+		</div>
+		<div class="cara-tres"> <!--se crea el conternedor para el tercer dado--->
+			<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+		</div>
+		<div class="cara-cuatro"> <!--se crea el conternedor para el cuarto dado--->
+			<div class="columna"> <!--con esta clase hacemos referncia  a la columna en  la que queremos que se ordenen los puntos-->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			</div>
+			<div class="columna"><!--con esta clase hacemos referncia  a la columna en  la que queremos que se ordenen los puntos-->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			</div>
+		</div>
+		<div class="cara-cinco"> <!--se crea el conternedor para el quinto dado--->
+			<div class="columna"><!--con esta clase hacemos referncia  a la columna en  la que queremos que se ordenen los puntos-->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			</div>
+			<span class="punto medio"></span><!--con este elemento se crean los puntos de los dados. La clase medio se creo para que el  elemento se centre en la mitad del contenedor padre--->
+			<div class="columna"><!--con esta clase hacemos referncia  a la columna en  la que queremos que se ordenen los puntos-->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			</div>
+		</div>
+		<div class="cara-seis"> <!--se crea el conternedor para el sexto dado--->
+			<div class="columna"><!--con esta clase hacemos referncia  a la columna en  la que queremos que se ordenen los puntos-->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			</div>
+			<div class="columna"><!--con esta clase hacemos referncia  a la columna en  la que queremos que se ordenen los puntos-->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+				<span class="punto"></span><!--con este elemento se crean los puntos de los dados --->
+			</div>
+		</div>
+	</section>
+</body>
+</html>

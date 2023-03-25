@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);/* se utiliza para imortar la fuente de Googles Fonts, Roboto*/
+body{
+	margin: 0;/* se utiliza para generar un espacion exterior entre elementos y contenedores*/
+	padding: 0;/* se utiliza para generar un espacio interno entre elementod ó contenedores*/
+	font-family: 'Roboto', sans-serif;/*es la fuente que queremos que se muetre en nuestra pagina*/ 
+	background: #333; /*esta propiedad hace referencia al color de fondo */
+	color: #fff;/*propiedad que define el color de nuestos textos o fuente*/
+}
+header {
+	padding: 20px;/* se utiliza para generar un espacio interno entre elementod ó contenedores*/
+}
+h1{
+	font-weight: 700;/*  se utiliza para especificar el grosor a la fuente  */
+	text-transform: uppercase;/* transforma el texto del elemento en mayuscula*/
+	
+}
+p{
+	font-weight: 300;/*  se utiliza para especificar el grosor a la fuente  */
+}
+a {
+	color: gray;/*propiedad que define el color de nuestos textos*/
+}
+section {
+	display: flex;/* sirve para  crear un contenedor flexible para los elementos hijos dentro de él*/
+	justify-content: center; /* sirve para controlar de manera horzontal los elementos que estan en erl contenedro padre section*/
+	flex-wrap: wrap;/*hace mas responsive mi pagina, haciendo que un elemento vaya uno debajo del otro, cuando no haya sificiente espacio en el contenedor*/
+}
+[class^="cara-"]{ /* con esto le diremos a css que queremos todas las clases "cara- " con las siguientes propiedades.*/
+	display: flex;/* sirve para  crear un contenedor flexible para los elementos hijos dentro de él*/
+	margin: 1em;/* se utiliza para generar un espacion exterior entre elementos y contenedores*/
+	width: 150px;/*es la amplitud o la anchura del elemento*/
+	height: 150px;/*es la altura  del elemento*/
+	padding: 15px;/* se utiliza para generar un espacio interno entre elementod ó contenedores*/
+	background: #FEFEF6;/*esta propiedad hace referencia al color de la cara del dado*/
+	border-radius: 10%;/*es para darle una forma a los bordes y los permite redondear */
+}
+.cara-uno{
+	justify-content: center;/* sirve para controlar de manera horzontal los elementos que estan en el contenedor padre */
+	align-items: center;/* sirve para controlar de manera vertical los elementos que estan en el contenedor del padre */
+}
+.cara-dos{
+	justify-content: space-between;/* sirve para controlar de manera horizontal los elementos que estan en el contenedor padre */
+}
+.cara-dos .punto:nth-child(2){ /* esto es para tomar los hijos del contenedor pradre  */
+	align-self: flex-end; /* el elemento se alineara al final del contenedor de manera vertical */
+}
+.cara-tres{
+	justify-content: space-between;/* sirve para controlar de manera horizontal los elementos que estan en el contenedor cara 3*/
+}
+.cara-tres .punto:nth-child(2){
+	align-self: center; /* esta propiedad toma el  hijo para que se ubique de manera vertical en el centro de su columna */
+}
+.cara-tres .punto:nth-child(3){
+	align-self: flex-end; /* el elemento se alineara al final del contenedor de manera vertical */
+
+}
+.cara-cuatro{
+	justify-content: space-between;/* sirve para controlar de manera horizontal los elementos que estan en el contenedor padre */
+}
+.cara-cuatro .columna {
+	display: flex;/* sirve para  crear un contenedor flexible para los elementos hijos dentro de él*/
+	flex-direction: column;/* sirve para que los elementos se organicen en columnas */
+	justify-content: space-between;/* sirve para controlar de manera horizontal los elementos que estan en el contenedor cara cuatro*/
+}
+.cara-cinco{
+	display: flex;/* sirve para  crear un contenedor flexible para los elementos hijos dentro de él*/
+	justify-content: space-between;/* sirve para controlar de manera horizontal los elementos que estan en el contenedor*/
+}
+.cara-cinco .columna {
+	display: flex; /* sirve para  crear un contenedor flexible para los elementos hijos dentro de él*/
+	flex-direction: column;/* sirve para que los elementos se organicen en columnas */
+	justify-content: space-between;/* sirve para controlar de manera horizontal los elementos que estan en el contenedor*/
+
+}
+.cara-cinco .medio{
+	align-self: center;
+}
+.cara-seis{
+	display: flex;/* sirve para  crear un contenedor flexible para los elementos hijos dentro de él*/
+	justify-content: space-between;
+}
+.cara-seis .columna{
+	display: flex;/* sirve para  crear un contenedor flexible para los elementos hijos dentro de él*/
+	flex-direction: column;
+	justify-content: space-between;
+}
+.punto {
+	width: 20px; /*es la amplitud o la anchura del elemento*/
+	height: 20px;/*es la altura  del elemento*/
+	border-radius: 50%; /*es para darle una forma a los bordes y los permite redondear */
+	background: black;/*esta propiedad hace referencia al color   del punto*/
+	box-shadow: inset 0 3px #111, inset 0 -3px #555;/* se utiliza para agregar sombras a un elemento */
+}
